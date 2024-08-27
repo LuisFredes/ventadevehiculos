@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       whatsapp2: "https://wa.me/+5492615088877",
       imagenes: [
         "Images/vehiculos/GolDoblin1.jpg",
-        "https://github.com/LuisFredes/ventadevehiculos/blob/c561860be4c9cdf929bd80a88e5c832fc86c234e/Images/vehiculos/goldoblin2.jpg",
+        "Images/vehiculos/goldoblin2.jpg",
         "Images/vehiculos/GolDoblin3.jpg",
       ],
     },
