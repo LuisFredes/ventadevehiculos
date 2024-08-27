@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imagenes: [
         "Images/vehiculos/GolDoblin1.jpg",
         "images/vehiculos/GolDoblin2.jpg",
-        "images/vehiculos/GolDoblin3.jpg",
+        "Images/vehiculos/GolDoblin3.jpg",
       ],
     },
     3: {
