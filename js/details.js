@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       whatsapp1: "https://wa.me/+5492614168330",
       whatsapp2: "https://wa.me/+5492615088877",
       imagenes: [
-        "images/vehiculos/prueba1_1.jpg",
+        "Images/vehiculos/Prueba1.jpg",
         "./images/vehiculos/prueba1_2.jpg",
         "./images/vehiculos/prueba1_3.jpg",
       ],
