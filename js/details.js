@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       whatsapp1: "https://wa.me/+5492614168330",
       whatsapp2: "https://wa.me/+5492615088877",
       imagenes: [
-        "./images/vehiculos/prueba1_1.jpg",
+        "images/vehiculos/prueba1_1.jpg",
         "./images/vehiculos/prueba1_2.jpg",
         "./images/vehiculos/prueba1_3.jpg",
       ],
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       whatsapp1: "https://wa.me/+5492614168330",
       whatsapp2: "https://wa.me/+5492615088877",
       imagenes: [
-        "./images/vehiculos/prueba3_1.jpg",
+        "images/vehiculos/prueba3_1.jpg",
         "./images/vehiculos/prueba3_2.jpg",
         "./images/vehiculos/prueba3_3.jpg",
       ],
