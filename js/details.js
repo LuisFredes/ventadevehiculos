@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ubicacion: "Ciudad de México, CDMX",
       whatsapp1: "https://wa.me/+5492614168330",
       whatsapp2: "https://wa.me/+5492615088877",
-      imagenes: ["./images/vehiculos/prueba1.jpg"],
+      imagenes: ["./images/vehiculos/Prueba1.jpg"],
     },
     2: {
       marca: "Gol",
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       whatsapp2: "https://wa.me/+5492615088877",
       imagenes: [
         "./images/vehiculos/GolDoblin1.jpg",
-        "./images/vehiculos/GolDoblin2.jpg",
+        "./images/vehiculos/goldoblin2.jpg",
         "./images/vehiculos/GolDoblin3.jpg",
       ],
     },
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ubicacion: "Monterrey, Nuevo León",
       whatsapp1: "https://wa.me/+5492614168330",
       whatsapp2: "https://wa.me/+5492615088877",
-      imagenes: ["./images/vehiculos/prueba3.jpg"],
+      imagenes: ["./images/vehiculos/Prueba3.jpg"],
     },
     4: {
       marca: "Ford Mustang",
