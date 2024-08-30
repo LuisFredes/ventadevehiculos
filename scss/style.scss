@@ -73,6 +73,7 @@ footer {
 
   .container {
     .d-flex {
+      display: flex; // Añadido display flex para asegurar la correcta alineación
       justify-content: space-between;
       align-items: center;
 
@@ -128,7 +129,15 @@ footer {
 
   .card {
     .card-img-top {
-      height: auto;
+      height: 180px; // Asegúrate de ajustar esto según el diseño
+    }
+  }
+
+  #vehicle-detail {
+    .col-md-6 {
+      img {
+        height: auto;
+      }
     }
   }
 }
@@ -142,7 +151,7 @@ footer {
 
   .card {
     .card-img-top {
-      height: auto;
+      height: 150px; // Asegúrate de ajustar esto según el diseño
     }
   }
 }
