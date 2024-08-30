@@ -11,11 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ubicacion: "Ciudad de México, CDMX",
       whatsapp1: "https://wa.me/+5492614168330",
       whatsapp2: "https://wa.me/+5492615088877",
-      imagenes: [
-        "./images/vehiculos/prueba1_1.jpg",
-        "./images/vehiculos/prueba1_2.jpg",
-        "./images/vehiculos/prueba1_3.jpg",
-      ],
+      imagenes: ["./images/vehiculos/prueba1.jpg"],
     },
     2: {
       marca: "Gol",
@@ -44,11 +40,20 @@ document.addEventListener("DOMContentLoaded", () => {
       ubicacion: "Monterrey, Nuevo León",
       whatsapp1: "https://wa.me/+5492614168330",
       whatsapp2: "https://wa.me/+5492615088877",
-      imagenes: [
-        "./images/vehiculos/prueba3_1.jpg",
-        "./images/vehiculos/prueba3_2.jpg",
-        "./images/vehiculos/prueba3_3.jpg",
-      ],
+      imagenes: ["./images/vehiculos/prueba3.jpg"],
+    },
+    4: {
+      marca: "Ford Mustang",
+      modelo: "C",
+      año: "2023",
+      kilometraje: "5,000 km",
+      precio: "35000",
+      descripcion:
+        "Ford Mustang c con las últimas características de tecnología.",
+      ubicacion: "Monterrey, Nuevo León",
+      whatsapp1: "https://wa.me/+5492614168330",
+      whatsapp2: "https://wa.me/+5492615088877",
+      imagenes: ["./images/vehiculos/fordmustang.jpg"],
     },
   };
 

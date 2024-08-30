@@ -30,7 +30,7 @@ main .container .card {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 main .container .card .card-img-top {
-  height: 200px;
+  height: auto;
   object-fit: cover;
 }
 main .container .card .card-body {
@@ -64,6 +64,7 @@ footer .container .d-flex p {
 
 #vehicle-detail .col-md-6 img {
   max-width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 #vehicle-detail .col-md-6 a {
@@ -85,9 +86,6 @@ footer .container .d-flex p {
     max-width: 120px;
   }
   .card .card-img-top {
-    height: 150px;
-  }
-  #vehicle-detail .col-md-6 img {
     height: auto;
   }
 }
@@ -96,7 +94,7 @@ footer .container .d-flex p {
     max-width: 100px;
   }
   .card .card-img-top {
-    height: 120px;
+    height: auto;
   }
 }
 

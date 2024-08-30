@@ -43,7 +43,7 @@ main {
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
       .card-img-top {
-        height: 200px;
+        height: auto;
         object-fit: cover;
       }
 
@@ -92,6 +92,7 @@ footer {
   .col-md-6 {
     img {
       max-width: 100%;
+      height: auto;
       border-radius: 5px;
     }
 
@@ -127,15 +128,7 @@ footer {
 
   .card {
     .card-img-top {
-      height: 150px;
-    }
-  }
-
-  #vehicle-detail {
-    .col-md-6 {
-      img {
-        height: auto;
-      }
+      height: auto;
     }
   }
 }
@@ -149,7 +142,7 @@ footer {
 
   .card {
     .card-img-top {
-      height: 120px;
+      height: auto;
     }
   }
 }
