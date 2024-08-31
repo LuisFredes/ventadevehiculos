@@ -1,54 +1,55 @@
-// Variables de colores
-$primary-color: #007bff;
-$white: #fff;
-$gray-dark: #343a40;
-$gray-light: #f8f9fa;
-
-// Estilos generales
-body {
-  font-family: Arial, sans-serif;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
-  background-color: $gray-light;
+  box-sizing: border-box;
 }
 
-// Header
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Estilos del header */
 header {
-  background-color: $primary-color;
-  color: $white;
-  padding: 1rem 0;
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 0;
   text-align: center;
 
   .logo {
     max-width: 150px;
-    margin-bottom: 0.5rem;
-    height: auto; // Asegura que la imagen no se distorsione
+    height: auto;
   }
 
   h1 {
-    margin: 0;
-    font-size: 1.5rem; // Ajusta el tamaño de fuente si es necesario
+    margin-top: 10px;
+    font-size: 1.5rem;
   }
 }
 
-// Main content
+/* Estilos del main */
 main {
+  padding: 30px 0;
+
   .container {
     margin-top: 2rem;
 
     h2 {
       margin-bottom: 1.5rem;
-      font-size: 1.25rem; // Ajusta el tamaño de fuente si es necesario
+      font-size: 1.25rem;
     }
 
     .card {
       border: none;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1rem; // Espacio entre tarjetas
+      margin-bottom: 1rem;
 
       .card-img-top {
         width: 100%;
-        height: auto;
+        height: 200px;
         object-fit: cover;
       }
 
@@ -69,31 +70,75 @@ main {
   }
 }
 
-// Footer
+/* Estilos del footer */
 footer {
-  background-color: $primary-color;
-  color: $white;
-  padding: 1rem 0;
-  margin-top: 2rem;
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
 
-  .container {
-    .d-flex {
-      display: flex; // Asegura la correcta alineación
-      justify-content: space-between;
-      align-items: center;
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
 
-      .text-white {
-        margin-right: 1rem;
-      }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
-      p {
-        margin: 0;
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mb-0 {
+    margin-bottom: 0;
+  }
+}
+
+/* Estilos de la galería y filtros */
+#vehicle-gallery {
+  .vehicle {
+    margin-bottom: 20px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
+      overflow: hidden;
+
+      .card-body {
+        padding: 15px;
       }
     }
   }
 }
 
-// Detalle del vehículo
+/* Estilos de los filtros */
+.form-group {
+  margin-bottom: 1rem;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Estilos de los botones */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+
+  &:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+}
+
+/* Estilos del detalle del vehículo */
 #vehicle-detail {
   .col-md-6 {
     img {
@@ -110,11 +155,11 @@ footer {
 
   h2 {
     margin-top: 1rem;
-    font-size: 1.5rem; // Ajusta el tamaño de fuente si es necesario
+    font-size: 1.5rem;
   }
 }
 
-// Estilos del carrusel
+/* Estilos del carrusel */
 .carousel-inner {
   .carousel-item {
     img {
@@ -125,7 +170,7 @@ footer {
   }
 }
 
-// Estilos para diferentes tamaños de pantalla (responsive)
+/* Estilos responsive */
 @media (max-width: 768px) {
   header {
     .logo {
@@ -135,7 +180,7 @@ footer {
 
   .card {
     .card-img-top {
-      height: 200px; // Ajusta esto según el diseño
+      height: 250px; // Aumenta la altura de la imagen en pantallas medianas
     }
   }
 
@@ -157,11 +202,11 @@ footer {
 
   .card {
     .card-img-top {
-      height: 150px; // Ajusta esto según el diseño
+      height: 300px; // Aumenta la altura de la imagen en pantallas pequeñas
     }
   }
 
   h2 {
-    font-size: 1.125rem; // Ajusta el tamaño de fuente si es necesario
+    font-size: 1.125rem;
   }
 }
