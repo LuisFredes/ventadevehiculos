@@ -11,6 +11,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Estilos del header */
@@ -31,7 +32,7 @@ header h1 {
 
 /* Estilos del main */
 main {
-  padding: 30px 0;
+  padding: 30px;
 }
 main .container {
   margin-top: 2rem;
@@ -78,6 +79,7 @@ footer a:hover {
   text-decoration: underline;
 }
 footer .d-flex {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -142,7 +144,7 @@ footer .mb-0 {
 }
 
 /* Estilos responsive */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   header .logo {
     max-width: 120px;
   }
@@ -153,7 +155,10 @@ footer .mb-0 {
     height: auto;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
   header .logo {
     max-width: 100px;
   }
@@ -162,6 +167,23 @@ footer .mb-0 {
   }
   h2 {
     font-size: 1.125rem;
+  }
+}
+@media (max-width: 576px) {
+  header .logo {
+    max-width: 80px;
+  }
+  .card .card-img-top {
+    height: 150px;
+  }
+  .card .card-body {
+    padding: 0.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .form-control {
+    font-size: 0.875rem;
   }
 }
 

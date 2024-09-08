@@ -10,6 +10,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Estilos del header */
@@ -32,7 +33,7 @@ header {
 
 /* Estilos del main */
 main {
-  padding: 30px 0;
+  padding: 30px;
 
   .container {
     margin-top: 2rem;
@@ -88,6 +89,7 @@ footer {
   }
 
   .d-flex {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -171,7 +173,8 @@ footer {
 }
 
 /* Estilos responsive */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  // Tablets
   header {
     .logo {
       max-width: 120px;
@@ -193,7 +196,12 @@ footer {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  // Móviles grandes
+  main {
+    padding: 20px;
+  }
+
   header {
     .logo {
       max-width: 100px;
@@ -208,5 +216,32 @@ footer {
 
   h2 {
     font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 576px) {
+  // Móviles pequeños
+  header {
+    .logo {
+      max-width: 80px;
+    }
+  }
+
+  .card {
+    .card-img-top {
+      height: 150px; // Ajustado para pantallas muy pequeñas
+    }
+
+    .card-body {
+      padding: 0.5rem;
+    }
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .form-control {
+    font-size: 0.875rem;
   }
 }
