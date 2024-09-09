@@ -16,6 +16,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <style>
+      /* Ajustes de estilo adicionales */
+      .card-img-top {
+        width: 100%; /* Asegura que las imágenes ocupen el 100% del contenedor */
+        height: auto; /* Mantiene la proporción de las imágenes */
+      }
+      .logo {
+        max-width: 150px; /* Ajusta el tamaño del logo si es necesario */
+        height: auto;
+      }
+      @media (max-width: 767.98px) {
+        .logo {
+          max-width: 100px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -57,7 +73,6 @@
               <option value="c-class">C-Class</option>
               <option value="mustang">Mustang</option>
               <option value="doblin">Doblin</option>
-              <!-- Cambio realizado aquí -->
             </select>
           </div>
         </div>
@@ -167,7 +182,7 @@
             </div>
           </a>
         </div>
-        <!-- Vehículo 4 (nuevo) -->
+        <!-- Vehículo 4 -->
         <div
           class="col-md-4 mb-4 vehicle"
           data-marca="ford"
