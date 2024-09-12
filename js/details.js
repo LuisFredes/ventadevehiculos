@@ -9,24 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
       descripcion:
         "Audi A3 en excelente estado, con todos los servicios al día.",
       ubicacion: "Ciudad de México, CDMX",
-      whatsapp1: "https://wa.me/+5492614168330",
-      whatsapp2: "https://wa.me/+5492615088877",
-      imagenes: ["./images/vehiculos/Prueba1.jpg"],
+      whatsapp1: "https://wa.me/1234567890",
+      whatsapp2: "https://wa.me/0987654321",
+      imagenes: ["./Images/vehiculos/Prueba1.jpg"],
     },
     2: {
       marca: "Gol",
       modelo: "Doblin 1.9",
       año: "2000",
       kilometraje: "25,000 km",
-      precio: "5.000.000",
+      precio: "5000000",
       descripcion: "Gol Doblin 1.9 modelo diesel.",
-      ubicacion: "Fray Luis Beltran,Mendoza,Maipu",
-      whatsapp1: "https://wa.me/+5492614168330",
-      whatsapp2: "https://wa.me/+5492615088877",
+      ubicacion: "Fray Luis Beltran, Mendoza, Maipu",
+      whatsapp1: "https://wa.me/1234567890",
+      whatsapp2: "https://wa.me/0987654321",
       imagenes: [
-        "./images/vehiculos/GolDoblin1.jpg",
-        "./images/vehiculos/goldoblin2.jpg",
-        "./images/vehiculos/GolDoblin3.jpg",
+        "./Images/vehiculos/GolDoblin1.jpg",
+        "./Images/vehiculos/GolDoblin2.jpg",
+        "./Images/vehiculos/GolDoblin3.jpg",
       ],
     },
     3: {
@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
       descripcion:
         "Mercedes-Benz C-Class con las últimas características de tecnología.",
       ubicacion: "Monterrey, Nuevo León",
-      whatsapp1: "https://wa.me/+5492614168330",
-      whatsapp2: "https://wa.me/+5492615088877",
-      imagenes: ["./images/vehiculos/Prueba3.jpg"],
+      whatsapp1: "https://wa.me/1234567890",
+      whatsapp2: "https://wa.me/0987654321",
+      imagenes: ["./Images/vehiculos/Prueba3.jpg"],
     },
     4: {
       marca: "Ford Mustang",
@@ -49,11 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
       kilometraje: "5,000 km",
       precio: "35000",
       descripcion:
-        "Ford Mustang c con las últimas características de tecnología.",
+        "Ford Mustang con las últimas características de tecnología.",
       ubicacion: "Monterrey, Nuevo León",
-      whatsapp1: "https://wa.me/+5492614168330",
-      whatsapp2: "https://wa.me/+5492615088877",
-      imagenes: ["./images/vehiculos/fordmustang.jpg"],
+      whatsapp1: "https://wa.me/1234567890",
+      whatsapp2: "https://wa.me/0987654321",
+      imagenes: ["./Images/vehiculos/fordmustang.jpg"],
     },
   };
 
@@ -62,57 +62,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const vehicle = vehiclesDetails[vehicleId];
 
   if (vehicle) {
-    const vehicleDetail = document.getElementById("vehicle-detail");
+    // Carrusel de imágenes
+    const carouselInner = document.querySelector(
+      "#vehicleCarousel .carousel-inner"
+    );
     const images = vehicle.imagenes
       .map(
         (img, index) => `
-      <div class="carousel-item${index === 0 ? " active" : ""}">
-        <img src="${img}" class="d-block w-100" alt="${vehicle.marca} ${
+          <div class="carousel-item${index === 0 ? " active" : ""}">
+            <img src="${img}" class="d-block w-100" alt="${vehicle.marca} ${
           vehicle.modelo
         } ${index + 1}" />
-      </div>
-    `
+          </div>
+        `
       )
       .join("");
+    carouselInner.innerHTML = images;
 
-    vehicleDetail.innerHTML = `
-      <div class="col-md-6">
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-inner">
-            ${images}
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h3>${vehicle.marca} ${vehicle.modelo}</h3>
-        <p><strong>Año:</strong> ${vehicle.año}</p>
-        <p><strong>Kilometraje:</strong> ${vehicle.kilometraje}</p>
-        <p><strong>Precio:</strong> $${vehicle.precio}</p>
-        <p><strong>Descripción:</strong> ${vehicle.descripcion}</p>
-        <p><strong>Ubicación:</strong> ${vehicle.ubicacion}</p>
-        <a href="index.html" class="btn btn-primary mb-2">
-          Volver a la Galería
+    // Información del vehículo
+    const vehicleInfo = document.getElementById("vehicleInfo");
+    vehicleInfo.innerHTML = `
+      <h3>${vehicle.marca} ${vehicle.modelo}</h3>
+      <p><strong>Año:</strong> ${vehicle.año}</p>
+      <p><strong>Kilometraje:</strong> ${vehicle.kilometraje}</p>
+      <p><strong>Precio:</strong> $${vehicle.precio}</p>
+      <p><strong>Descripción:</strong> ${vehicle.descripcion}</p>
+      <p><strong>Ubicación:</strong> ${vehicle.ubicacion}</p>
+      <h3>Contacto</h3>
+      <div class="whatsapp-links">
+        <a href="${vehicle.whatsapp1}" target="_blank">
+          <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
         </a>
-        <div>
-          <a href="${vehicle.whatsapp1}" class="btn btn-success mr-2" target="_blank">
-            Contactar por WhatsApp
-          </a>
-          <a href="${vehicle.whatsapp2}" class="btn btn-success" target="_blank">
-            Contactar por WhatsApp 2
-          </a>
-        </div>
+        <a href="${vehicle.whatsapp2}" target="_blank">
+          <i class="fab fa-whatsapp"></i> Contactar por WhatsApp 2
+        </a>
       </div>
     `;
   } else {
-    document.getElementById("vehicle-detail").innerHTML =
+    document.getElementById("vehicleInfo").innerHTML =
       "<p>Vehículo no encontrado.</p>";
   }
 });
