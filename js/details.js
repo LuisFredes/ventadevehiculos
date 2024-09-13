@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
       descripcion:
         "Audi A3 en excelente estado, con todos los servicios al día.",
       ubicacion: "Ciudad de México, CDMX",
-      whatsapp1: "https://wa.me/1234567890",
-      whatsapp2: "https://wa.me/0987654321",
+      whatsapp1: "https://wa.me/+5492614168330",
+      whatsapp2: "https://wa.me/+5492615088877",
       imagenes: ["./Images/vehiculos/Prueba1.jpg"],
     },
     2: {
@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
       precio: "5000000",
       descripcion: "Gol Doblin 1.9 modelo diesel.",
       ubicacion: "Fray Luis Beltran, Mendoza, Maipu",
-      whatsapp1: "https://wa.me/1234567890",
-      whatsapp2: "https://wa.me/0987654321",
+      whatsapp1: "https://wa.me/+5492614168330",
+      whatsapp2: "https://wa.me/+5492615088877",
       imagenes: [
         "./Images/vehiculos/GolDoblin1.jpg",
-        "./Images/vehiculos/GolDoblin2.jpg",
+        "./Images/vehiculos/golDoblin2.jpg",
         "./Images/vehiculos/GolDoblin3.jpg",
       ],
     },
@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
       descripcion:
         "Mercedes-Benz C-Class con las últimas características de tecnología.",
       ubicacion: "Monterrey, Nuevo León",
-      whatsapp1: "https://wa.me/1234567890",
-      whatsapp2: "https://wa.me/0987654321",
+      whatsapp1: "https://wa.me/+5492614168330",
+      whatsapp2: "https://wa.me/+5492615088877",
       imagenes: ["./Images/vehiculos/Prueba3.jpg"],
     },
     4: {
@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
       descripcion:
         "Ford Mustang con las últimas características de tecnología.",
       ubicacion: "Monterrey, Nuevo León",
-      whatsapp1: "https://wa.me/1234567890",
-      whatsapp2: "https://wa.me/0987654321",
+      whatsapp1: "https://wa.me/+5492614168330",
+      whatsapp2: "https://wa.me/+5492615088877",
       imagenes: ["./Images/vehiculos/fordmustang.jpg"],
     },
   };
