@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       whatsapp2: "https://wa.me/+5492615088877",
       imagenes: [
         "./Images/vehiculos/GolDoblin1.jpg",
-        "./Images/vehiculos/golDoblin2.jpg",
+        "Images/vehiculos/goldoblin2.jpg",
         "./Images/vehiculos/GolDoblin3.jpg",
       ],
     },
